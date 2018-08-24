@@ -13,11 +13,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var persons: [String] = []
+    let shared = CoredataManaged.shared
+    
+    var persons: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +37,53 @@ class ViewController: UIViewController {
         self.tableView.dataSource = self
     }
     
+    func saveData(name: String) {
+        let managedContext = self.shared.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Person", in: managedContext)
+        guard let entities = entity else {
+            return
+        }
+        let person = NSManagedObject(entity: entities, insertInto: managedContext)
+        
+        person.setValue(name, forKey: "name")
+        
+        do {
+            try managedContext.save()
+            self.persons.append(person)
+        } catch let error {
+            print("Error: \(error)")
+        }
+    }
+    
+    func fetchData() {
+        let managedContext = self.shared.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<Person>(entityName: "Person")
+        
+        do {
+            self.persons = try managedContext.fetch(fetchRequest)
+        } catch let error {
+            print("Error: \(error)")
+        }
+    }
+    
+    func deleteData(at indexPath: IndexPath) {
+        guard indexPath.row < persons.count else {
+            return
+        }
+        
+        let managedContext = self.shared.persistentContainer.viewContext
+        managedContext.delete(persons[indexPath.row])
+        
+        do {
+            try managedContext.save()
+        } catch let err {
+            print("Error: \(err)")
+        }
+        
+        self.fetchData()
+        self.tableView.reloadData()
+    }
+    
     @IBAction func addPerson(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "New Person", message: "Add a new name", preferredStyle: .alert)
         let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] (action) in
@@ -37,7 +91,7 @@ class ViewController: UIViewController {
                 let nameToSave = textField.text else {
                     return
             }
-            self.persons.append(nameToSave)
+            self.saveData(name: nameToSave)
             self.tableView.reloadData()
         }
         
@@ -58,12 +112,19 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = persons[indexPath.row]
+        cell.textLabel?.text = persons[indexPath.row].value(forKeyPath: "name") as? String
         return cell
     }
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            self.deleteData(at: indexPath)
+        default:
+            break
+        }
+    }
 }
 
