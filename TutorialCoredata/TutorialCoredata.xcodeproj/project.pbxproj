@@ -15,6 +15,8 @@
 		223DA7F22130568600D6C63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223DA7F02130568600D6C63B /* LaunchScreen.storyboard */; };
 		223DA7FC213066E000D6C63B /* SampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 223DA7FB213066E000D6C63B /* SampleData.plist */; };
 		223DA7FE2130673200D6C63B /* CoredataManaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA7FD2130673200D6C63B /* CoredataManaged.swift */; };
+		223DA81221306B7700D6C63B /* Bowtie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA81021306B7600D6C63B /* Bowtie+CoreDataClass.swift */; };
+		223DA81321306B7700D6C63B /* Bowtie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA81121306B7700D6C63B /* Bowtie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		223DA7F32130568600D6C63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		223DA7FB213066E000D6C63B /* SampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleData.plist; sourceTree = "<group>"; };
 		223DA7FD2130673200D6C63B /* CoredataManaged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManaged.swift; sourceTree = "<group>"; };
+		223DA81021306B7600D6C63B /* Bowtie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223DA81121306B7700D6C63B /* Bowtie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bowtie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		223DA7E32130568500D6C63B /* TutorialCoredata */ = {
 			isa = PBXGroup;
 			children = (
+				223DA81421306B7B00D6C63B /* Extension+Coredata */,
 				223DA7E42130568500D6C63B /* AppDelegate.swift */,
 				223DA7FD2130673200D6C63B /* CoredataManaged.swift */,
 				223DA7E62130568500D6C63B /* ViewController.swift */,
@@ -71,6 +76,15 @@
 				223DA7EB2130568500D6C63B /* TutorialCoredata.xcdatamodeld */,
 			);
 			path = TutorialCoredata;
+			sourceTree = "<group>";
+		};
+		223DA81421306B7B00D6C63B /* Extension+Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				223DA81021306B7600D6C63B /* Bowtie+CoreDataClass.swift */,
+				223DA81121306B7700D6C63B /* Bowtie+CoreDataProperties.swift */,
+			);
+			path = "Extension+Coredata";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				223DA7FE2130673200D6C63B /* CoredataManaged.swift in Sources */,
+				223DA81221306B7700D6C63B /* Bowtie+CoreDataClass.swift in Sources */,
 				223DA7E72130568500D6C63B /* ViewController.swift in Sources */,
 				223DA7E52130568500D6C63B /* AppDelegate.swift in Sources */,
 				223DA7ED2130568500D6C63B /* TutorialCoredata.xcdatamodeld in Sources */,
+				223DA81321306B7700D6C63B /* Bowtie+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
