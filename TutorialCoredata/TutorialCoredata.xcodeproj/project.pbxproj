@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222745D02130D67800223F5F /* CoredataManaged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222745CF2130D67800223F5F /* CoredataManaged.swift */; };
 		223DA7E52130568500D6C63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA7E42130568500D6C63B /* AppDelegate.swift */; };
 		223DA7E72130568500D6C63B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA7E62130568500D6C63B /* ViewController.swift */; };
 		223DA7EA2130568500D6C63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223DA7E82130568500D6C63B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		222745CF2130D67800223F5F /* CoredataManaged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataManaged.swift; sourceTree = "<group>"; };
 		223DA7E12130568500D6C63B /* TutorialCoredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialCoredata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223DA7E42130568500D6C63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223DA7E62130568500D6C63B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				223DA7E42130568500D6C63B /* AppDelegate.swift */,
+				222745CF2130D67800223F5F /* CoredataManaged.swift */,
 				223DA7E62130568500D6C63B /* ViewController.swift */,
 				223DA7E82130568500D6C63B /* Main.storyboard */,
 				223DA7EE2130568600D6C63B /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222745D02130D67800223F5F /* CoredataManaged.swift in Sources */,
 				223DA7E72130568500D6C63B /* ViewController.swift in Sources */,
 				223DA7E52130568500D6C63B /* AppDelegate.swift in Sources */,
 				223DA7ED2130568500D6C63B /* TutorialCoredata.xcdatamodeld in Sources */,
