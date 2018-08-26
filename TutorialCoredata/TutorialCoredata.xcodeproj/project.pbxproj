@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223C51BD213151DA008FC917 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 223C51BC213151DA008FC917 /* seed.json */; };
+		223C51BF21315207008FC917 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51BE21315207008FC917 /* CoreDataStack.swift */; };
+		223C51CB21315DD9008FC917 /* Stats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C121315DD9008FC917 /* Stats+CoreDataClass.swift */; };
+		223C51CC21315DD9008FC917 /* Stats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C221315DD9008FC917 /* Stats+CoreDataProperties.swift */; };
+		223C51CD21315DD9008FC917 /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C321315DD9008FC917 /* Location+CoreDataClass.swift */; };
+		223C51CE21315DD9008FC917 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C421315DD9008FC917 /* Location+CoreDataProperties.swift */; };
+		223C51CF21315DD9008FC917 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C521315DD9008FC917 /* Category+CoreDataClass.swift */; };
+		223C51D021315DD9008FC917 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C621315DD9008FC917 /* Category+CoreDataProperties.swift */; };
+		223C51D121315DD9008FC917 /* Venue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C721315DD9008FC917 /* Venue+CoreDataClass.swift */; };
+		223C51D221315DD9008FC917 /* Venue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C821315DD9008FC917 /* Venue+CoreDataProperties.swift */; };
+		223C51D321315DD9008FC917 /* PriceInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C921315DD9008FC917 /* PriceInfo+CoreDataClass.swift */; };
+		223C51D421315DD9008FC917 /* PriceInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51CA21315DD9008FC917 /* PriceInfo+CoreDataProperties.swift */; };
 		223DA7E52130568500D6C63B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA7E42130568500D6C63B /* AppDelegate.swift */; };
 		223DA7E72130568500D6C63B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223DA7E62130568500D6C63B /* ViewController.swift */; };
 		223DA7EA2130568500D6C63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223DA7E82130568500D6C63B /* Main.storyboard */; };
@@ -16,6 +28,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223C51BC213151DA008FC917 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
+		223C51BE21315207008FC917 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		223C51C121315DD9008FC917 /* Stats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223C51C221315DD9008FC917 /* Stats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		223C51C321315DD9008FC917 /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223C51C421315DD9008FC917 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		223C51C521315DD9008FC917 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223C51C621315DD9008FC917 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		223C51C721315DD9008FC917 /* Venue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223C51C821315DD9008FC917 /* Venue+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Venue+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		223C51C921315DD9008FC917 /* PriceInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		223C51CA21315DD9008FC917 /* PriceInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PriceInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		223DA7E12130568500D6C63B /* TutorialCoredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialCoredata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		223DA7E42130568500D6C63B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		223DA7E62130568500D6C63B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223C51C021315DB8008FC917 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				223C51C121315DD9008FC917 /* Stats+CoreDataClass.swift */,
+				223C51C221315DD9008FC917 /* Stats+CoreDataProperties.swift */,
+				223C51C321315DD9008FC917 /* Location+CoreDataClass.swift */,
+				223C51C421315DD9008FC917 /* Location+CoreDataProperties.swift */,
+				223C51C521315DD9008FC917 /* Category+CoreDataClass.swift */,
+				223C51C621315DD9008FC917 /* Category+CoreDataProperties.swift */,
+				223C51C721315DD9008FC917 /* Venue+CoreDataClass.swift */,
+				223C51C821315DD9008FC917 /* Venue+CoreDataProperties.swift */,
+				223C51C921315DD9008FC917 /* PriceInfo+CoreDataClass.swift */,
+				223C51CA21315DD9008FC917 /* PriceInfo+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
 		223DA7D82130568500D6C63B = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +97,15 @@
 		223DA7E32130568500D6C63B /* TutorialCoredata */ = {
 			isa = PBXGroup;
 			children = (
+				223C51C021315DB8008FC917 /* NSManagedObject */,
 				223DA7E42130568500D6C63B /* AppDelegate.swift */,
+				223C51BE21315207008FC917 /* CoreDataStack.swift */,
 				223DA7E62130568500D6C63B /* ViewController.swift */,
 				223DA7E82130568500D6C63B /* Main.storyboard */,
 				223DA7EE2130568600D6C63B /* Assets.xcassets */,
 				223DA7F02130568600D6C63B /* LaunchScreen.storyboard */,
 				223DA7F32130568600D6C63B /* Info.plist */,
+				223C51BC213151DA008FC917 /* seed.json */,
 				223DA7EB2130568500D6C63B /* TutorialCoredata.xcdatamodeld */,
 			);
 			path = TutorialCoredata;
@@ -127,6 +171,7 @@
 			files = (
 				223DA7F22130568600D6C63B /* LaunchScreen.storyboard in Resources */,
 				223DA7EF2130568600D6C63B /* Assets.xcassets in Resources */,
+				223C51BD213151DA008FC917 /* seed.json in Resources */,
 				223DA7EA2130568500D6C63B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +183,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223C51D321315DD9008FC917 /* PriceInfo+CoreDataClass.swift in Sources */,
+				223C51CE21315DD9008FC917 /* Location+CoreDataProperties.swift in Sources */,
+				223C51CD21315DD9008FC917 /* Location+CoreDataClass.swift in Sources */,
+				223C51D121315DD9008FC917 /* Venue+CoreDataClass.swift in Sources */,
 				223DA7E72130568500D6C63B /* ViewController.swift in Sources */,
 				223DA7E52130568500D6C63B /* AppDelegate.swift in Sources */,
 				223DA7ED2130568500D6C63B /* TutorialCoredata.xcdatamodeld in Sources */,
+				223C51CC21315DD9008FC917 /* Stats+CoreDataProperties.swift in Sources */,
+				223C51BF21315207008FC917 /* CoreDataStack.swift in Sources */,
+				223C51D021315DD9008FC917 /* Category+CoreDataProperties.swift in Sources */,
+				223C51CF21315DD9008FC917 /* Category+CoreDataClass.swift in Sources */,
+				223C51CB21315DD9008FC917 /* Stats+CoreDataClass.swift in Sources */,
+				223C51D221315DD9008FC917 /* Venue+CoreDataProperties.swift in Sources */,
+				223C51D421315DD9008FC917 /* PriceInfo+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
