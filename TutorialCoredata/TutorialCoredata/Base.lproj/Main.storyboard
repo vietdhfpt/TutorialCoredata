@@ -339,7 +339,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Search" id="D8R-3g-Krk">
                             <connections>
-                                <action selector="saveButtonTapped:" destination="f24-vA-aYT" id="Jc7-ko-z0f"/>
+                                <action selector="pressSearch:" destination="f24-vA-aYT" id="dBQ-Vx-wR2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

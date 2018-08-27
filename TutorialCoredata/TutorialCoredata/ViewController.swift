@@ -78,7 +78,13 @@ class ViewController: UIViewController {
     
     // MARK: - Prepare
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
+        guard segue.identifier == "toFilterViewController",
+               let navController = segue.destination as? UINavigationController,
+               let filterVC = navController.topViewController as? FilterViewController else {
+            return
+        }
+        filterVC.coreDataStack = self.coreDataStack
+        filterVC.delegate = self
     }
 }
 
@@ -100,5 +106,18 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     
+}
+
+// MARK: - FilterViewControllerDelegate
+extension ViewController: FilterViewControllerDelegate {
+    func filterViewController(filter: FilterViewController, didSelectPredicate predicate: NSPredicate?, sortDescriptor: NSSortDescriptor?) {
+        fetchRequest.predicate = nil
+        fetchRequest.sortDescriptors = nil
+        fetchRequest.predicate = predicate
+        if let sr = sortDescriptor {
+            fetchRequest.sortDescriptors = [sr]
+        }
+        fetchAndReload()
+    }
 }
 
