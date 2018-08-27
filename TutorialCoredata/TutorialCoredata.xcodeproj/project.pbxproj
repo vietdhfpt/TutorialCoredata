@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2205E98B21323D4200B43ED9 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205E98A21323D4200B43ED9 /* FilterViewController.swift */; };
 		223C51BD213151DA008FC917 /* seed.json in Resources */ = {isa = PBXBuildFile; fileRef = 223C51BC213151DA008FC917 /* seed.json */; };
 		223C51BF21315207008FC917 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51BE21315207008FC917 /* CoreDataStack.swift */; };
 		223C51CB21315DD9008FC917 /* Stats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223C51C121315DD9008FC917 /* Stats+CoreDataClass.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2205E98A21323D4200B43ED9 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		223C51BC213151DA008FC917 /* seed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = seed.json; sourceTree = "<group>"; };
 		223C51BE21315207008FC917 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		223C51C121315DD9008FC917 /* Stats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stats+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				223C51C021315DB8008FC917 /* NSManagedObject */,
 				223DA7E42130568500D6C63B /* AppDelegate.swift */,
 				223C51BE21315207008FC917 /* CoreDataStack.swift */,
+				2205E98A21323D4200B43ED9 /* FilterViewController.swift */,
 				223DA7E62130568500D6C63B /* ViewController.swift */,
 				223DA7E82130568500D6C63B /* Main.storyboard */,
 				223DA7EE2130568600D6C63B /* Assets.xcassets */,
@@ -192,6 +195,7 @@
 				223DA7ED2130568500D6C63B /* TutorialCoredata.xcdatamodeld in Sources */,
 				223C51CC21315DD9008FC917 /* Stats+CoreDataProperties.swift in Sources */,
 				223C51BF21315207008FC917 /* CoreDataStack.swift in Sources */,
+				2205E98B21323D4200B43ED9 /* FilterViewController.swift in Sources */,
 				223C51D021315DD9008FC917 /* Category+CoreDataProperties.swift in Sources */,
 				223C51CF21315DD9008FC917 /* Category+CoreDataClass.swift in Sources */,
 				223C51CB21315DD9008FC917 /* Stats+CoreDataClass.swift in Sources */,

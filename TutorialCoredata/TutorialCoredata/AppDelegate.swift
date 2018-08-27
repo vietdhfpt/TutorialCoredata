@@ -76,6 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let jsonUrl = Bundle.main.url(forResource: "seed", withExtension: "json")!
         let jsonData = NSData(contentsOf: jsonUrl)! as Data
         
+        /// Gets entity from Coredata
         let venueEntity = NSEntityDescription.entity(forEntityName: "Venue", in: managedContext)!
         let locationEntity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)!
         let categoryEntity = NSEntityDescription.entity(forEntityName: "Category", in: managedContext)!
